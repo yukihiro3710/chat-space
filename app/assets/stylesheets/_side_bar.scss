@@ -1,0 +1,89 @@
+.wrapper {
+  width: 100vw;
+ height: 100vh;
+ display: flex;
+}
+.chat-side{
+  height: 100vh;
+  width: 300px;
+   .side-bar__user-name{
+      background-color: #253141;
+      width: 300px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+       .top-items{
+        background-color: #253141;
+        height: 20px;
+        width: 260px;      
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+          &--name {
+           background-color: #253141;
+           font-size: 16px;
+           color: #ffffff;
+         }
+         &__icons {
+         width: 60px;
+          display: flex;
+          justify-content: flex-end;
+         }
+          &__user{
+           .users__btn--icon{
+             color: #ffffff;
+           }
+            }
+          
+           &__group{
+            margin-left: 5px;
+           .users__btn--icon{
+             color: #ffffff;
+           }
+          }
+         }
+        }
+    .side-bar__group-list{
+      width: 300px;
+      height: calc(100vh - 100px);
+      background-color: #2f3e51;
+      .group {
+       height: calc(100vh - 100px);
+       padding: 20px 20px 0;
+       background-color: #2f3e51;
+       overflow: scroll;
+         &-text {
+          height: 86px;
+          background-color: #2f3e51;
+          display: flex;
+          flex-direction: column;
+           &--up{
+             font-size: 15px;
+             margin-bottom: 5px;
+             .group-text--userdo {
+               color:#ffffff;
+               text-decoration: none;
+             }
+           }
+           &--dun {
+             font-size: 11px;
+             color: #ffffff;
+             margin-bottom: 40px;
+             .group-text--userdo {
+              color:#ffffff;
+              text-decoration: none;
+            }
+           }
+        }
+       }
+      }
+}
+   
+
+
+
+   
+
+
+
+
