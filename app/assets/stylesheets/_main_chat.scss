@@ -1,28 +1,26 @@
-@import"_variables";
-
 .chat-main {
 height: 100vh;
 width: calc(100vw - 300px);
 position: relative;
 
-.chat-main__group-info{
+&__group-info{
 height: 100px; 
 padding: 0 40px;
 display: flex;
 justify-content: space-between;
 border-bottom: solid 1px #eee;
 overflow: scroll;
-  .group_name {
+  .group__name {
    font-size: 20px;
    padding-top: 35px;
    color:  $Black;
    text-align: left;
   } 
-   .group_id {
+   .group__id {
     font-size: 12px;
     padding-top: 23px;
   }  
-  .group-info {
+  .group__info {
    height: 40px;
    padding: 0 20px;
    margin-top: 28px;
@@ -33,49 +31,39 @@ overflow: scroll;
    color: $ao; 
   }
  } 
-   .chat-main__message-list{
+   &__message-list{
     height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
     overflow: scroll;
-     .messaga {
-     display: flex;
-     .date {
-     margin-bottom: 10px;
-     font-size: 16px;
+      .message {
+       
+        &__upper{
+          display: flex;
+          margin-bottom: 10px;
+        }
+
+        &__username{
+          margin-bottom: 10px;
+          font-size: 16px;
           color:  $Black;
           font-weight: bold;
-      }
-      .date-a{
-        font-size: 12px;
-        color: $siru;
-        margin-left: 10px;
-       }
-      }
-     .messaga_txet{
-        font-size: 14px;
-        color: $rie;
-      }
-      .message-list {
-        display: flex;
-        margin-top: 43px;
-        .date-c {
-        font-size: 16px;
-        color:  $Black;
-        font-weight: bold;
-      }
-        .date-d{
-         font-size: 12px;
-         color: $siru;
-         margin-left: 10px;
-      }
-      }
-      .date-txet{
-        font-size: 14px;
-        color: $rie;
-    }
+        }
+
+        &__date{
+          font-size: 12px;
+          color: $siru;
+          margin-left: 10px;
+        }
+
+        &__txet{
+            font-size: 14px;
+            color: $rie;
+            padding-bottom: 46px;
+          }
+        }
  }
-  .chat-main__message-form {           
+  &__message-form {           
   height: 90px;
   padding: 20px 40px;
   background-color: #ddd;
