@@ -1,0 +1,21 @@
+.chat-side
+  .side-bar__user-name
+    .top-items
+      .top-items--name
+        masa
+      .top-items__icons
+        .top-items__user       
+          = link_to "#" do
+            = icon('fas', 'edit', class: "users__btn--icon")
+        .top-items__group
+          = link_to "#" do
+            = icon('fas', 'cog', class: "users__btn--icon")
+  .side-bar__group-list
+    .group 
+      .group-text
+        .group-text--up
+          = link_to "#", class: "group-text--userdo" do
+            techcamp
+        .group-text--dun
+          = link_to "#", class: "group-text--userdo" do
+            まだメッセージがありません

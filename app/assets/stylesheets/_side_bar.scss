@@ -1,0 +1,87 @@
+.wrapper {
+  width: 100vw;
+ height: 100vh;
+ display: flex;
+}
+.chat-side{
+ height: 100vh;
+ width: 300px;
+  .side-bar__user-name{
+   background-color: $side-back;
+   width: 300px;
+   height: 100px;
+   display: flex;
+   align-items: center;
+    .top-items{
+    background-color: $side-back;
+    height: 20px;
+     width: 260px;      
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+      &--name {
+      background-color: $side-back;
+      font-size: 16px;
+      color: $wait;
+      }
+      &__icons {
+      width: 60px;
+      display: flex;
+      justify-content: flex-end;
+      }
+       &__user{
+       .users__btn--icon{
+       color: $wait;
+       }
+       }
+        &__group{
+        margin-left: 5px;
+          .users__btn--icon{
+          color: $wait;
+         }
+          }
+         }
+        }
+ .side-bar__group-list{
+ width: 300px;
+ height: calc(100vh - 100px);
+ background-color: $group-back;
+  .group {
+  height: calc(100vh - 100px);
+  padding: 20px 20px 0;
+  background-color: $group-back;
+  overflow: scroll;
+    &-text {
+    height: 86px;
+    background-color: $group-back;
+    display: flex;
+    flex-direction: column;
+      &--up{
+      font-size: 15px;
+      margin-bottom: 5px;
+        .group-text--userdo {
+         color:$wait;
+        text-decoration: none;
+        }
+    }
+   &--dun {
+   font-size: 11px;
+   color: $wait;
+   margin-bottom: 40px;
+     .group-text--userdo {
+      color: $wait;
+      text-decoration: none;
+     }
+    }
+   }
+  }
+ }
+}
+
+
+
+   
+
+
+
+
