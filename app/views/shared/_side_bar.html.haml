@@ -5,17 +5,18 @@
         = current_user.name
       .top-items__icons
         .top-items__user       
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fas', 'edit', class: "users__btn--icon")
         .top-items__group
           = link_to edit_user_path(current_user) do
             = icon('fas', 'cog', class: "users__btn--icon")
   .side-bar__group-list
     .group 
-      .group-text
-        .group-text--up
-          = link_to "#", class: "group-text--userdo" do
-            techcamp
-        .group-text--dun
-          = link_to "#", class: "group-text--userdo" do
-            まだメッセージがありません
+      - current_user.groups.each do |group|
+        .group-text
+          .group-text--up
+            = link_to "#", class: "group-text--userdo" do
+              = group.name
+          .group-text--dun
+            = link_to "#", class: "group-text--userdo" do
+              メッセージはまだありません
