@@ -15,8 +15,8 @@
       - current_user.groups.each do |group|
         .group-text
           .group-text--up
-            = link_to "#", class: "group-text--userdo" do
+            = link_to group_messages_path(group), class: "group-text--userdo" do
               = group.name
           .group-text--dun
-            = link_to "#", class: "group-text--userdo" do
-              メッセージはまだありません
+            = link_to group_messages_path(group), class: "group-text--userdo" do
+              = group.show_last_message
